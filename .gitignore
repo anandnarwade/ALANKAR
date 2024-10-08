@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/alankar-app/.vs
+/alankar-app/alankar.api/obj
+/alankar-app/alankar.api/bin/Debug/net8.0

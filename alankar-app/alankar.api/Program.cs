@@ -1,3 +1,4 @@
+using alankar.api.Data;
 using alankar.api.Repo;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IDatabaseConnection, DatabaseConnection>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
